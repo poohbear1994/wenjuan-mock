@@ -2,7 +2,7 @@ const Mock = require("mockjs");
 
 const Random = Mock.Random;
 
-module.export = [
+module.exports = [
   {
     url: "/api/question/:id", // 获取单个问卷
     method: "get",
