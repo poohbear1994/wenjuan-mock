@@ -36,13 +36,16 @@ module.exports = [
     url: "/api/question",
     method: "get",
     response(ctx) {
-      const isDeleted = ctx.url.indexOf("isDeleted=true") >= 0;
-      const isStar = ctx.url.indexOf("isStar=true") >= 0;
+      const { url = "", query = {} } = ctx;
+      const isDeleted = url.indexOf("isDeleted=true") >= 0;
+      const isStar = url.indexOf("isStar=true") >= 0;
+      const page = parseInt(query.page) || 1;
+      const pageSize = parseInt(query.pageSize) || 10;
 
       return {
         errno: 0,
         data: {
-          list: getQuestionList({ isDeleted, isStar }), // 当前页的
+          list: getQuestionList({ isDeleted, isStar, len: pageSize }), // 当前页的
           total: 100, // 总数
         },
       };

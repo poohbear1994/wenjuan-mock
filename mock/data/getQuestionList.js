@@ -8,7 +8,6 @@ const Random = Mock.Random;
  */
 const getQuestionList = (opt = {}) => {
   const { len = 10, isDeleted = false, isStar = false } = opt;
-  console.log(len, isDeleted, isStar);
 
   const list = [];
   for (let i = 0; i < len; i++) {
