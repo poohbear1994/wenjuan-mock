@@ -51,4 +51,15 @@ module.exports = [
       };
     },
   },
+
+  // 更新问卷
+  {
+    url: "/api/question/:id", // 获取单个问卷
+    method: "patch",
+    response() {
+      return {
+        errno: 0,
+      };
+    },
+  },
 ];
