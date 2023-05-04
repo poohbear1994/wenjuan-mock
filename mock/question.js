@@ -62,4 +62,18 @@ module.exports = [
       };
     },
   },
+
+  // 复制问卷
+  {
+    url: "/api/question/duplicate/:id", // 获取单个问卷
+    method: "post",
+    response(ctx) {
+      return {
+        errno: 0,
+        data: {
+          id: Random.id(),
+        },
+      };
+    },
+  },
 ];
