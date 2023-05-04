@@ -67,12 +67,23 @@ module.exports = [
   {
     url: "/api/question/duplicate/:id", // 获取单个问卷
     method: "post",
-    response(ctx) {
+    response() {
       return {
         errno: 0,
         data: {
           id: Random.id(),
         },
+      };
+    },
+  },
+
+  // 批量删除
+  {
+    url: "/api/question", // 获取单个问卷
+    method: "delete",
+    response() {
+      return {
+        errno: 0,
       };
     },
   },
