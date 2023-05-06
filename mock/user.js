@@ -11,7 +11,7 @@ module.exports = [
         errno: 0,
         data: {
           username: Random.title(),
-          nickname: Random.ctitle(),
+          nickname: Random.cname(),
         },
       };
     },
