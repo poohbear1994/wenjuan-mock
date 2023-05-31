@@ -10,7 +10,7 @@ const getComponentList = () => {
   return [
     // Info
     {
-      fe_id: Random.id(),
+      fe_id: 'c1',
       type: 'questionInfo',
       title: '问卷信息',
       isHidden: false,
@@ -21,7 +21,7 @@ const getComponentList = () => {
     },
     // Title
     {
-      fe_id: Random.id(),
+      fe_id: 'c2',
       // 组件类型不能重复，前后端统一好
       type: 'questionTitle',
       // 组件标题
@@ -35,7 +35,7 @@ const getComponentList = () => {
     },
     // Input
     {
-      fe_id: Random.id(),
+      fe_id: 'c3',
       type: 'questionInput',
       title: '输入框',
       isHidden: false,
@@ -46,7 +46,7 @@ const getComponentList = () => {
     },
     // Input
     {
-      fe_id: Random.id(),
+      fe_id: 'c4',
       type: 'questionInput',
       title: '输入框',
       isHidden: false,
@@ -57,7 +57,7 @@ const getComponentList = () => {
     },
     // Paragraph
     {
-      fe_id: Random.id(),
+      fe_id: 'c5',
       type: 'questionParagraph',
       title: '段落',
       isHidden: false,
@@ -68,7 +68,7 @@ const getComponentList = () => {
     },
     // Textarea
     {
-      fe_id: Random.id(),
+      fe_id: 'c6',
       type: 'questionTextarea',
       title: '文本输入框',
       isHidden: false,
@@ -79,7 +79,7 @@ const getComponentList = () => {
     },
     // Radio
     {
-      fe_id: Random.id(),
+      fe_id: 'c7',
       type: 'questionRadio',
       title: '单选',
       isHidden: false,
@@ -96,7 +96,7 @@ const getComponentList = () => {
     },
     // Checkbox
     {
-      fe_id: Random.id(),
+      fe_id: 'c8',
       type: 'questionCheckbox',
       title: '多选',
       isHidden: false,

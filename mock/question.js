@@ -61,7 +61,7 @@ module.exports = [
 
   // 更新问卷
   {
-    url: "/api/question/:id", // 获取单个问卷
+    url: "/api/question/:id",
     method: "patch",
     response() {
       return {
@@ -72,7 +72,7 @@ module.exports = [
 
   // 复制问卷
   {
-    url: "/api/question/duplicate/:id", // 获取单个问卷
+    url: "/api/question/duplicate/:id",
     method: "post",
     response() {
       return {
@@ -86,7 +86,7 @@ module.exports = [
 
   // 批量删除
   {
-    url: "/api/question", // 获取单个问卷
+    url: "/api/question",
     method: "delete",
     response() {
       return {
