@@ -18,7 +18,8 @@ module.exports = [
           desc: '页面描述',
           css: '',
           js: '',
-          isPublished: true,
+          isPublished: Random.boolean(),
+          isDeleted: Random.boolean(),
           // 问卷组件列表
           componentList: getComponentList()
         },
